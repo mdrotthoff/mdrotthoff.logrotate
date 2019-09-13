@@ -94,16 +94,3 @@ To run the test playbook locally within a Vagrant virtual machine:
 cd tests
 vagrant up --provision
 ```
-
-## License
-
-[BSD](https://raw.githubusercontent.com/nickhammond/logrotate/master/LICENSE)
-
-## Author Information
-
-* [nickhammond](https://github.com/nickhammond) | [www](http://www.nickhammond.com) | [twitter](http://twitter.com/nickhammond)
-* [bigjust](https://github.com/bigjust)
-* [steenzout](https://github.com/steenzout)
-* [jeancornic](https://github.com/jeancornic)
-* [duhast](https://github.com/duhast)
-* [kagux](https://github.com/kagux)
