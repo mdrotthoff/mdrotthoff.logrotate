@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Nick Hammond
+  author: David Rotthoff
   description: Role to configure logrotate scripts
   license: MIT
   min_ansible_version: 1.9
