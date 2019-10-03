@@ -3,6 +3,11 @@
 # $Date$
 # $Source$
 
+
+###############################################
+# Logrotate configuration & installation role #
+###############################################
+
 - name: Dump the variables / facts known by Ansible for the Logrotate role
   include_role:
     name: mdrotthoff.ansible-debug
