@@ -1,2 +1,7 @@
+logrotate_package_state: present
+logrotate_package_name: logrotate
+logrotate_script_owner: root
+logrotate_script_group: root
+logrotate_script_mode: "0644"
 logrotate_conf_dir: "/etc/logrotate.d/"
 logrotate_scripts: []

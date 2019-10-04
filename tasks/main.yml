@@ -14,13 +14,17 @@
 
 - name: Install the logrotate package
   package:
-    name: logrotate
-    state: present
-  when: logrotate_scripts is defined and logrotate_scripts|length > 0
+    name: "{{ logrotate_package_name }}"
+    state: "{{ logrotate_package_state }}"
+  when: logrotate_scripts is defined
 
 - name: Setup logrotate.d scripts provided
   template:
     src: logrotate.d.j2
     dest: "{{ logrotate_conf_dir }}{{ item.name }}"
+    owner: "{{ logrotate_script_owner }}"
+    group: "{{ logrotate_script_group }}"
+    mode: "{{ logrotate_script_mode }}"
   with_items: "{{ logrotate_scripts }}"
-  when: logrotate_scripts is defined
+  when: logrotate_scripts is defined and logrotate_scripts|length > 0
+  
